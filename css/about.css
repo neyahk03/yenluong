@@ -142,6 +142,20 @@ strong {
     color: var(--dark-red);
 }
 
+.link {
+    display: flex;
+    gap: 2rem;
+
+    a {
+        color: black;
+
+    }
+
+    a:visited {
+        color: black;
+    }
+}
+
 
 footer {
     font-size: 0.75rem;
