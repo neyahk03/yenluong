@@ -123,7 +123,7 @@ nav {
     margin: 0 10rem;
 }
 
-.detail {
+.description {
     display: flex;
     flex-direction: column;
     justify-content: center;
