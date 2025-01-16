@@ -70,13 +70,23 @@ nav {
 .logo {
     font-weight: 700;
     
+    
     a {
         color: black;
         text-decoration: none;
+
+        transition: color 0.3s ease;
     }
 
     a:visited {
         color: black;
+    }
+}
+
+.logo:hover {
+
+    a  {
+        color: var(--lightpink);
     }
 }
 
@@ -558,6 +568,13 @@ p ~ p {
 
     .mockup {
         padding: 0 5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1700px) {
+    body {
+        margin: 2rem auto;
     }
     
 }
