@@ -68,6 +68,15 @@ nav {
 
 .logo {
     font-weight: 700;
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+    }
 }
 
 .navbar {
@@ -144,7 +153,7 @@ nav {
     line-height: 1.75rem;
 }
 
-.container {
+.wrapper {
     background-color: var(--lightblue);
 
     display: flex;
@@ -275,6 +284,10 @@ footer {
         display: block;
     }
 
+    .btn-menu:hover {
+        cursor: pointer;
+    }
+
     .btn-menu div {
         height: 2px;
         width: 30px;
@@ -333,7 +346,7 @@ footer {
 
     .menu {
         display: block;
-        background-color: pink;
+        background-color: var(--lightpink);
         /* grid-column: 1/8;
         grid-row-start: 1; */
         text-align: center;
