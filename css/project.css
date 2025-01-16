@@ -372,20 +372,88 @@ p ~ p {
 }
 
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1100px) {
 
+    nav{
+        padding: 2rem;
+    }
+    section {
+        padding: 0;
+    }
+
+    .hero {
+        margin: 5rem;
+        /* grid-template-columns: 1fr; */
+    }
+
+    .text {
+        margin: 0 10rem;
+        line-height: 2.4rem;
+    }
+
+    .process-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 2rem;
+    
+
+    }
+
+    .two-column {
+        margin: 2rem 5rem;
+        gap: 1rem;
+    }
+
+    .problem {
+        margin: 1rem 10rem;
+    }
+
+    .vid {
+        padding-top: 1rem;
+        padding: 1rem 10rem;
+    
+    }
 }
 
 @media screen and (max-width: 550px) {
+    .navbar {
+        display: none;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .btn-menu:hover {
+        cursor: pointer;
+    }
+
+    .btn-menu div {
+        height: 2px;
+        width: 30px;
+        background-color: black;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
     
+    button {
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        z-index: 60;
+    }
+
+    .btn-menu.change {
+        .bar1 {
+            transform: translate(0, 7px) rotate(-45deg);
+        }
+        
+        .bar2 {opacity: 0;}
+        
+        .bar3 {
+            transform: translate(0, -7px) rotate(45deg);
+        }
+    }
 
     .menu {
         display: block;
@@ -444,6 +512,52 @@ p ~ p {
 
     .menu.open {
         transform: none;
+    }
+
+    /* body */
+
+    .hero {
+        margin: 1rem;
+        grid-template-columns: 1fr;
+        line-height: 2.4rem;
+    }
+
+    .text {
+        margin: 0 3rem;
+        line-height: 2.4rem;
+    }
+
+    .process-container {
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    .three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+        margin: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .problem, .insight {
+        margin: 1rem 3rem;
+    }
+
+    .pic {
+        margin: 0 1rem;
+    }
+
+    .vid {
+        padding-top: 1rem;
+        padding: 1rem 1rem;
+    
+    }
+
+    .mockup {
+        padding: 0 5rem;
     }
     
 }
