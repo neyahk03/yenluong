@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'phudublack';
+    src:url('../fonts/Phudu-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-regular-webffont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    --red: #a63b33;
+    --lightblue: #AEE2FD;
+    --lightpink: #FFCBD4;
+
+    --orange: #FF8400;
+
+
+
+    --background-color: var(--white);
+    --foreground-color: var(--red);
+    --accent-color-1: var(--dark-red);
+    --accent-color-2: var(--blue);
+    --accent-color-3: var(--light-blue);
+
+    --font-light: 'poppinslight';
+    --font-regular: 'poppinsregular';
+    --font-bold: 'phudublack', var(--font-regular);
+
+    --rhythm: 2rem;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'urbanist';
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar and menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+    padding-right: 5rem;
+
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.navbar {
+    ul {
+        display: flex;
+        padding-left: 0;
+    }
+
+    li {
+        list-style-type: none;
+        color: black;
+    }
+
+    li a {
+        color: black;
+        text-decoration: none;
+        padding-inline: 2rem;
+    }
+
+    li a:last-child {
+        padding-right: 0;
+    }
+
+    li a:visited{
+        color: black;
+    }
+}
+
+.btn-menu {
+    display: none;
+
+}
+
+.menu {
+    display: none;
+}
+
+
+/* intro */
+/* .intro {
+    display: flex;
+    margin: 0 auto ;
+    max-width: 50vw;
+    padding: 8rem 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+} */
+
+.info {
+
+    p {
+        text-wrap: wrap;
+    }
+}
+
+.profile {
+    width: 30rem;
+
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+}
+
+.hero {
+    background-color: var(--lightpink);
+    display: flex;
+    padding: 5rem 20rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    line-height: 1.75rem;
+}
+
+.container {
+    background-color: var(--lightblue);
+
+    display: flex;
+    /* padding: 8rem auto; */
+}
+
+.project {
+    display: flex;
+    padding: 5rem 15rem;
+    align-items: center;
+    gap: 2rem
+
+}
+
+.mockup {
+    
+    a {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    img:hover{
+        transform: translateY(-0.5rem);
+    }
+}
+
+.detail {
+    text-align: center;
+
+    .brand {
+        width: 100%;
+    }
+}
+
+.view {
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    /* border: 1px solid black; */
+    
+    width: fit-content;
+    
+    margin-top: 3rem;
+    
+
+    
+    a {
+        color: lightyellow;
+        text-decoration: none;
+        
+        padding: 1rem;
+        background-color: var(--red);
+        border-radius: 5rem;
+    }
+
+}
+
+.wok {
+    background-color: var(--orange);
+}
+
+
+.view:hover {
+    transform: scale(1.05);
+}
+
+.view a:after {
+    color: black;
+}
+
+footer {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+    nav {
+        padding: 2rem;
+    }
+
+    header {
+        padding: 0 5rem;
+    }
+
+    .hero {
+        padding: 4rem 4rem;
+    }
+
+    .profile {
+        width: 30rem;
+    }
+
+    .project {
+        padding: 4rem 2rem;    
+    }
+
+    .mockup {
+    
+        img {
+            width: 70%;
+            transition: transform 0.3s ease;
+        }
+    
+        img:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        display: none;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .btn-menu div {
+        height: 2px;
+        width: 30px;
+        background-color: black;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+    
+    button {
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        z-index: 60;
+    }
+
+    .btn-menu.change {
+        .bar1 {
+            transform: translate(0, 7px) rotate(-45deg);
+        }
+        
+        .bar2 {opacity: 0;}
+        
+        .bar3 {
+            transform: translate(0, -7px) rotate(45deg);
+        }
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 2rem 2rem;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .mockup {
+        img {
+            width: 50%;
+        }
+    }
+
+
+
+
+    .detail {
+        margin: 0;
+    }
+
+    .menu {
+        display: block;
+        background-color: pink;
+        /* grid-column: 1/8;
+        grid-row-start: 1; */
+        text-align: center;
+        /* font-family: var(--font-bold); */
+        position: fixed;
+        width: 100vw;
+    
+        transform: translateY(-100vh);
+        transition: transform 225ms ease-in-out;
+        z-index: 50;
+        right: 0;
+        top: 0;
+        height: 100vh;
+    
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            /* transform: translateY(-56px); */
+            
+            display: flex;
+            flex-direction: column;
+            /* font-size: 3rem; */
+            font-weight: 400;
+            justify-content: center;
+    
+        }
+    
+        ul li {
+            list-style-type: none;
+            margin: 1rem 0;
+    
+            a {
+                text-decoration: none;
+                color: black;
+            }
+    
+            a:visited {
+                color: black;
+            }
+    
+            a:active {
+                text-decoration:underline;
+            }
+    
+            a:active {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .menu.open {
+        transform: none;
+    }
+    
+}
+
