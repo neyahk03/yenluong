@@ -156,6 +156,23 @@ strong {
     }
 }
 
+.resume {
+    a {
+        color: var(--dark-red);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: var(--dark-red);
+    }
+
+    
+}
+
 
 footer {
     font-size: 0.75rem;
