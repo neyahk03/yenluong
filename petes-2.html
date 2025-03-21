@@ -39,25 +39,24 @@
         <!-- content -->
 
         <div class="hero-image">
+            
             <img src="images/petes/phone-mockup.png" alt="Pete's mockup">
         </div>
 
-        <div class="index-nav">
-            <a href="#overview">Overview</a>
-            <a href="#context">Context and Challenge</a>
-            <a href="#timeline">Timeline</a>
-            
-            <div class="dropdown">
-                <a href="#insight" class="dropdown-toggle">Process and Insight</a>
-                <div class="dropdown-menu">
-                    <a href="#start">Getting Started</a>
-                    <a href="#alpha">Alpha Phase</a>
-                    <a href="#final">Final Phase</a>
-                </div>
-            </div>
 
-            <a href="#solution">Solution</a>
-            <a href="#result">The Result</a>
+        <a href="#top">
+            <div class="back-to-top">
+                <img src="images/petes-v2/up-arrow.png" alt="back to top">
+            </div>
+        </a>
+
+        <div class="index-nav">
+                <a href="#overview">Overview</a>
+                <a href="#context">Context and Challenge</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#insight">Process and Insight</a>
+                <a href="#solution">Solution</a>
+                <a href="#result">The Result</a>
         </div>
 
         <section id ="overview" class="overview-container">
@@ -537,17 +536,164 @@
 
             <div class="text">
                 <strong>Payment Method</strong>
-                <p> Users choose how they want to pay, such as credit card, Apple Pay, or cash on pickup.</p>
+                <p> The payment method selection is an essential step, implemented using JavaScript to dynamically update the UI based on user choices. When users click on the "Choose Payment" box, they are directed to the payment selection screen, where they can choose from Google Pay, Apple Pay, Venmo, or Cash on Pickup. The script listens for the selection, stores the choice using <strong>localStorage.setItem()</strong> , and then updates the UI accordingly.
+                </p>
+
             </div>
 
+            <div class="photo">
+                <img src="images/petes-v2/payment-selection-1.png" alt="payment selection">
+            </div>
+
+            
+            <div class="text">
+                
+                When the page loads, the script retrieves the stored payment method and its corresponding icon from <strong>localStorage</strong>  and updates the .choose-payment container dynamically. If a payment method is selected, the interface replaces the default display with the selected option's icon using <strong>innerHTML</strong>.
+                
+            </div>
+            
+            <div class="photo">
+                <img src="images/petes-v2/payment-selection-2.png" alt="payment selection">
+            </div>
+
+            <div class="text">
+                <strong>Pickup time and tips</strong>
+                <p>In addition to selecting a payment method, users can customize their pickup time and tip amount before finalizing their order. By default, the system sets the pickup time to "Pickup ASAP" and the tip amount to "No Tip" to ensure a quick and frictionless checkout experience. However, users have the flexibility to change these settings through a simple selection form.</p>
+            </div>
+
+            <div class="text">
+                <strong>Generate order number and transfer from cart to order</strong>
+
+                <p>When setting up the order confirmation process, I made sure that once the user clicks "Place Order", the screen redirects to the confirmation page, where an order number is generated dynamically. To keep the order numbers sequential and prevent them from getting too large, I implemented a reset mechanism—if the order number exceeds 999, it resets back to 1.</p>
+
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/generate-order-number.png" alt="generate order number">
+            </div>
+
+            <div class="text">
+                At this stage, I wanted to transfer the cart details into a dedicated session for the order summary. To achieve this, I created a new <strong>$_SESSION['order']</strong>  array that stores the order number, items, subtotal, total price, tax, tip, and pickup time. The pickup time defaults to "ASAP" unless the user selects a specific time. I also reset the <strong>$_SESSION['cart']</strong> after transferring the data to the order session. This ensures that when the user returns to the menu, they can add new items without any interference from their previous order.
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/cart-to-order.png" alt="cart to order">
+            </div>
+
+            <p class="small-title">Viewing order status</p>
+
+            <div class="text">
+                <p>
+                    On the Order Status page, I retrieve the order details from <strong>$_SESSION['order']</strong>  and display them to the user. This includes the order number, list of ordered items, subtotal, tax, tip, total price, and pickup time. Pulling this information directly from the session ensures the user sees the most up-to-date details of their order without requiring additional database queries.
+                </p>
+                <p>
+                    To extract the order details, I use the null coalescing operator (??) to provide default values if any data is missing:
+                </p>
+
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/session-cart.png" alt="session cart">
+            </div>
+
+            <div class="text">
+                Each item in the order contains key details such as the item ID, image link, name, price, quantity, subtotal, customizations, and notes. This makes it possible to display an accurate order summary on the page:
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/item.png" alt="example 11">
+            </div>
+
+            <div class="text">
+                I added a simple animation to notify the user when their order is ready for pickup. When the order is marked as ready, the completion icon gradually becomes fully visible by changing its opacity, creating a smooth transition. Additionally, the pickup time dynamically updates to "Now," and a message appears indicating that the order is ready for pickup. This small interaction enhances the user experience by providing a clear and visually engaging confirmation.
+            </div>
+
+            <div class="photo video">
+                <video controls loop="loop" muted="">
+                    <source src="images/petes-v2/animation.mov">
+                </video>
+            </div>
         </section>
     
         <section id="solution">
             <p class="big-title">
                 Solution
             </p>
-    
 
+
+            <div class="photo video">
+                <video controls loop="loop" muted="">
+                    <source src="images/petes-v2/final.mov">
+                </video>
+                <p>Final version runthrough</p>
+            </div>
+
+
+    
+            <div class="text">
+                For this project, our team designed and developed a seamless online ordering experience with a user-friendly interface and smooth interactions. The web app allows users to browse the menu, customize their orders, and proceed through checkout with ease. Below are the key design and development highlights that define the final product:
+
+            </div>
+
+            <div class="text">
+                <p class="small-title">
+                    User Experience &amp; Navigation
+                </p>
+
+                <p>
+                    The navigation structure is intuitive, ensuring users can smoothly transition between menu selection, cart review, and checkout. The shopping bag dynamically updates, reflecting real-time changes when items are added, removed, or modified. If the cart is empty, the screen displays a friendly message with a call-to-action button leading users back to the menu.
+                </p>
+            </div>
+
+            <div class="text">
+                <p class="small-title">
+                    Checkout Process
+                </p>
+
+                <p>
+                    Users can finalize their order by selecting a payment method, pickup time, and tip amount. The default settings ensure a quick ordering process, with pickup set to "ASAP" and no tip selected. These preferences are stored in localStorage, allowing users to revisit the checkout page without losing their selections.
+
+                </p>
+                <p>
+                    The payment method selection provides multiple options such as Google Pay, Apple Pay, Venmo, or cash on pickup. The UI updates dynamically based on the user's selection, ensuring a smooth checkout experience.
+
+                </p>
+            </div>
+
+            <div class="text">
+                <p class="small-title">
+                    Order Confirmation &amp; Status Updates
+                </p>
+
+                <p>
+                    Once the order is placed, the web app generates a unique order number and transfers the cart data into the order session. This ensures that past orders do not interfere with new ones, keeping the system organized. The Order Status page retrieves all order details and visually displays them to the user.
+
+
+                </p>
+                <p>
+                    To enhance the experience, I incorporated a small animation indicating when the order is ready. The completion icon fades in, the pickup time updates to "Now," and a message informs users that their order is ready for pickup. This subtle interaction provides real-time feedback and improves usability.
+                </p>
+            </div>
+
+            <div class="text">
+                <p class="small-title">
+                    Performance &amp; Seamless Backend Integration
+                </p>
+
+                <p>
+                    Throughout development, I ensured smooth backend functionality using PHP and SQL for data handling. By utilizing session storage, I eliminated unnecessary database queries, making the web app more efficient. Users experience a seamless, bug-free interface with fast-loading pages and dynamic interactions.
+
+                </p>
+            </div>
+
+            
+                <p class="small-title">Live Project</p>
+
+                <div class="live-link">
+                    <a href="https://digmstudents.westphal.drexel.edu/~yl3434/beepbop/final/login-signup.php" target="_blank">Go here to see the final version</a>
+        
+                </div>
+            
             
     
         </section>
@@ -556,6 +702,39 @@
             <p class="big-title">
                 The Results
             </p>
+
+            <div class="text">
+                The project was a success, achieving our goal of creating a streamlined, intuitive, and user-friendly ordering experience for Pete's Little Lunchbox. Through repetitive user testing and iteration, we refined the interface and functionality, ensuring a smooth ordering flow from menu selection to checkout.
+            </div>
+
+            <div class="text">
+                <p class="small-title">Sucess Metrics</p>
+
+                <ul>
+                    <li>
+                        <strong>90% Positive User Feedback:</strong> 
+                        Throughout multiple rounds of testing, users reported significant improvements in the ordering experience. The final version successfully eliminated confusion from the original cluttered menu layout, making it easier to navigate and customize orders.
+                    </li>
+
+                    <li>
+                        <strong>Seamless Backend &amp; Database Integration:</strong>
+                        By incorporating a dynamic MySQL database, we enabled real-time menu updates and streamlined data retrieval. The integration of PHP helped clean and simplify repetitive code, making the system more efficient.
+                    </li>
+
+                    <li><strong>Effortless Order Process &amp; Checkout:
+                    </strong>
+                    Users could easily select customizations, payment methods, pickup times, and tips without encountering roadblocks. The app dynamically updated totals and order details, reducing friction in the checkout process.</li>
+
+                    <li>
+                        <strong>Polished Visual &amp; Brand Identity: 
+                        </strong>
+                        Our use of red branding, a mascot, and a clean UI created a cohesive and recognizable identity for Pete's Little Lunchbox. The final design struck the right balance between boldness and usability.
+
+                    </li>
+                </ul>
+            </div>
+
+        </section>
     
             
 
@@ -605,5 +784,24 @@
 
     <script src="scripts/index.js"></script>
     <script src="scripts/index-nav.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        function toggleBackToTop() {
+            if (window.scrollY > window.innerHeight/3) {
+                backToTopButton.classList.add("show"); 
+            } else {
+                backToTopButton.classList.remove("show");
+            }
+        }
+
+        window.addEventListener("scroll", toggleBackToTop);
+
+        toggleBackToTop();
+    });
+
+
+    </script>
 </body>
 </html>           
