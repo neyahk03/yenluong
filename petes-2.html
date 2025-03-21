@@ -6,7 +6,7 @@
     <title>Homepage | Yen Luong</title>
     <link rel="stylesheet" type="text/css" href="css/project.css">
     <link rel="stylesheet" type="text/css" href="css/next.css">
-
+    <link rel="stylesheet" type="text/css" href="css/petes-v2.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="images/profileicon.png">
 </head>
@@ -42,27 +42,49 @@
             <img src="images/petes/phone-mockup.png" alt="Pete's mockup">
         </div>
 
-        <div class="overview-container">
+        <div class="index-nav">
+            <a href="#overview">Overview</a>
+            <a href="#context">Context and Challenge</a>
+            <a href="#timeline">Timeline</a>
+            
+            <div class="dropdown">
+                <a href="#insight" class="dropdown-toggle">Process and Insight</a>
+                <div class="dropdown-menu">
+                    <a href="#start">Getting Started</a>
+                    <a href="#alpha">Alpha Phase</a>
+                    <a href="#final">Final Phase</a>
+                </div>
+            </div>
+
+            <a href="#solution">Solution</a>
+            <a href="#result">The Result</a>
+        </div>
+
+        <section id ="overview" class="overview-container">
             <div class="name">
                 <div class="logo">
                     <img src="images/petes/petes-logo.png" alt="Pete's logo">
                 </div>
     
-                <h1>Food ordering app</h1>
+                <h1>Food Ordering App</h1>
 
             </div>
 
-            <section class="overview">
+            <div>
                 <p class="big-title">
                     Project Overview
                 </p>
     
                 <div>
-                    This project is part of the User Experience course taught by Professor Chris Nappi. It involved designing a take-out app for Pete's Little Lunch Box, a popular food truck near Drexel University. Known for its quick, customizable meals but lacking branding, Pete's was an ideal candidate for a digital makeover. Through collaborative efforts, our team utilized user research, wireframing, prototyping, and usability testing to create an app that reflected Pete's charm and practicality while addressing user needs and aligning with its values.
+                    Our team designed and developed a mobile ordering app for Pete's Little Lunchbox, streamlining the confusing and cluttered menu and ordering flow while preserving its signature red branding. We utilized Figma to create and refine prototypes through user testing before bringing the design to life with HTML, CSS, JavaScript, PHP, and a MySQL database. We kept our workflow organized and efficient through Microsoft Teams and FigJam. 
                 </div>
-            </section>
 
-            <section class="hero-phone">
+                <div>
+                    Our goal is now to enter the final stages of research and iteration to ensure an intuitive and user friendly experience before developing the final product. 
+                </div>
+            </div>
+
+            <div class="hero-phone">
             
                 <p class="big-title">
                     Details
@@ -72,398 +94,472 @@
                     
                     <div class="info">
                         <div>
-                            <p><strong>Role:</strong> UI/UX designer</p>
+                            <p><strong>Role:</strong> Backend Developer and Data Architecture</p>
                         </div>
     
                         <div>
-                            <p><strong>My team:</strong> Yi Huan Yang, Sreeja Satish and Emma Houghton</p>
+                        
+                                <strong>My team:</strong>
+                                <ul>
+                                    <li><strong>Sreeja Satish</strong> - Project Manger and Data Architecture</li>
+                                    <li><strong>Yi Huan Yang</strong> - Project Manager and Designer</li>
+                                    <li><strong>Fei Young</strong> - Designer and Frontend Developer</li>
+                                    <li><strong>Maple Tieu</strong> - Designer and Data Architect</li>
+                                </ul>
+                            
                         </div>
     
                         <div>
-                            <p><strong>Duration:</strong> Fall 2025</p>
+                            <p><strong>Duration:</strong> Winter 2025</p>
                         </div>
     
                         <div>
-                            <p><strong>Tool and Technologies:</strong> Figma, User Research, Affinity Mapping, NUF Framework, User Journey Map</p>
+                            <p><strong>Languages:</strong> PHP, mySQL, HTML, CSS, Javascript</p>
                         </div>
-    
+
+
                         
                     </div>
     
-                    <div class="live-link">
-                        <a href="https://www.figma.com/proto/7vSyDDv85vcOOTkxJOsznO/Pete's-Design-FIles?node-id=741-1014&p=f&t=33yJV054KhHgWP5E-1&scaling=scale-down&content-scaling=fixed&page-id=741%3A435&starting-point-node-id=741%3A508" target="_blank">Go here to see full hi-fi prototype</a>
-                    </div>
-        
+                    
                 </div>
-    
-            </section>
+                
+            </div>
+            
+            
+        </section>
 
+        <div class="live-link">
+            <a href="https://digmstudents.westphal.drexel.edu/~yl3434/beepbop/final/login-signup.php" target="_blank">Go here to see live site</a>
 
         </div>
-        
+    
 
-        <section>
+        <div class="text">
+            For the best experience, please view in inspect mode with Iphone XR. Thank you!
+        </div>
+
+        <section id="context">
             <p class="big-title">
-                Challenge
+                Context and Challenge
+            </p>
+    
+    
+            <p class="small-title">
+                Background
+            </p>
+            <div class="text">
+                In a previous course, we were tasked to design a functioning Figma prototype for a food truck app. We took this project further by refining the design and developing a functional and dynamic app through repetitive user research and testing. 
+            </div>
+    
+            <p class="small-title">
+                Problem
+            </p>
+    
+            <div class="text">
+                Though Pete's menu initially appeared extensive, it was actually quite small—the illusion of length came from the many customization options displayed at a glance. This presented a unique challenge, as we needed to streamline the menu in a way that maintained its variety without overwhelming users.
+                Additionally, the business lacked a social media presence or branding beyond the truck itself, which featured a red, white, and black color scheme. This gave us creative freedom but also solidified red as the dominant color in our design. Red proved to be both a challenge and an asset—its bold presence made a strong visual impact, yet required thoughtful application to avoid overwhelming the branding. In the end, it became a defining element of Pete's identity, striking a balance between vibrancy and usability.            </div>
+    
+    
+            <p class="small-title">
+                Goal and Objectives
             </p>
 
             <div class="text">
-                We chose Pete's Little Lunch Box for its strong community presence and charm, aiming to translate this into a mobile app. Despite a small menu, their customizable options created a deceptively long list, challenging us to simplify it without overwhelming users. Additionally, balancing our team's workload and schedules proved difficult, but through communication and efficient use of class time, we collaborated effectively to deliver a comprehensive app.            </div>
-        </section>
+                <strong>Our goals for this project included:</strong>
+                <ul>
+                    <li>Incorporate a dynamic MySQL database to easily pull menu items information 
+                    </li>
+                    <li>Seamless PHP integration to simplify and clean repetitive code 
+                    </li>
+                    <li>Create item detail pages that include customization options in order to simplify the number of repetitive menu items
+                    </li>
+                    <li>Incorporate an intuitive and clean navigation system and filtering system 
+                    </li>
+                    <li>Create a strong brand identity through the use of a mascot and a consistent color scheme </li>
+                </ul>    
+            </div>
 
-        <section>
+            <div class="text">
+                <strong>How we will measure sucess:</strong>
+                <p>Our goal is to achieve 90% positive feedback from users as we move from the first user testing to the final user testing. This means ensuring that the web app is intuitive, user-friendly, and meets the needs of our target audience. Additionally, we aim for the web app to function seamlessly, eliminating any bugs or technical issues that could hinder the user experience. By continuously refining the interface, improving performance, and addressing user concerns, we strive to create a polished and reliable product.
+                </p>
+            </div>
+        </section>
+    
+        <section id="timeline">
             <p class="big-title">
-                Our Goal
+                Timeline
+    
             </p>
 
-            <div class="three-column">
-                <div>
-                    <img class="icon" src="images/petes/phone-icon.png" alt="phone icon">
-                    <p>Design an efficient and intuitive app</p>
-                </div>
-    
-                <div>
-                    <img class="icon" src="images/petes/like-icon.png" alt="like icon">
-                    <p>Reflect Pete's consistent reliability, friendly service, and commitment to quality</p>
-                </div>
-    
-                <div>
-                    <img class="icon" src="images/petes/food-tray-icon.png" alt="food tray icon">
-                    <p>Cater to the fast-paced needs of on-the-go consumers</p>
-                </div>
-            </div>
-        </section>
+            <div class="text">
+                Although the project lasted for 10 weeks with three main stages—Alpha, Beta, and Final—I primarily focused on backend development, so my personal timeline consisted of three key stages:
 
-        <section>
-            <p class="big-title">Design Process</p>
-
-            <div class="process-container">
-                <div class="card">
-                    <strong>Empathize</strong>
-                    <ul>
-                        <li>User Interview</li>
-                        <li>Competitive Analysis</li>
-                        <li>Fly On The Wall exercise</li>
-                    </ul>
-    
-                </div>
-    
-                <div class="card">
-                    <strong>Define</strong>
-                    <ul>
-                        <li>User Persona</li>
-                        <li>Journey Map</li>
-                    </ul>
-                </div>
-    
-                <div class="card">
-                    <strong>Ideate</strong>
-                    <ul>
-                        <li>Moodboard</li>
-                        <li>Sketches</li>
-                        <li>NUF (New, Useful, Feasible) Analysis</li>
-                    </ul>
-                </div>
-    
-                <div class="card">
-                    <strong>Design</strong>
-                    <ul>
-                        <li>Wireframe</li>
-                        <li>Visual Design</li>
-                    </ul>
-                </div>
-    
-                <div class="card">
-                    <strong>Test</strong>
-                    <ul>
-                        <li>Usability Testing</li>
-                        <li>Implementing Feedback</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="Empathize">
-            <p class="medium-title">Empathize</p>
-
-            <p class="text">
-                To kickstart the project, we initiated a Fly on the Wall exercise, where each team member observed customers interacting with the food truck at different times of the day. In addition, we conducted interviews with Pete's customers to gain deeper insights into their needs and pain points.
-            </p>
-
-            <div class="insight">
-                <strong>Key Finding:</strong>
                 <ul>
-                    <li>Some regular customers prefer to call ahead to place their orders, allowing them to quickly pick up and pay on their way to class, saving valuable time.</li>
-                <li>Regular customers often prefer to reorder their favorite items consistently.</li>
-                <li>Non-regular customers take longer to decide and engage with the menu more</li>
-                
-                <li>Payments are split between Venmo and cash, with Venmo being slightly more popular</li>
-                <li>Busy periods align with mealtimes, particularly lunch, with a rush occurring after class hours</li>
-                </ul>
-            </div>
-
-            <p class="text">
-                During our User Research Interviews, we also conducted competitive research on existing food truck apps in the market. Additionally, we took an in-depth look at the mobile food ordering process to find inspiration and examples of intuitive and streamlined workflows. Below is our funtional audit from existing apps that we did research on:
-            </p>
-
-            <div class="pic">
-                <img src="images/petes/competitive-analysis.png" alt="Competitive Analysis">
-                <p>Competitive Analysis</p>
-            </div>
-
-            <p class="text">
-                Three ideas that stood out to us are <strong>menu variety, order customization,</strong> and <strong>rewards program</strong>. We wanted our app to showcase Pete's extensive menu selection while allowing users to personalize their orders easily. Additionally, we aimed to incorporate a rewards program to enhance customer loyalty and engagement.
-            </p>
- 
-        </section>
-
-        <section class="define">
-            <p class="medium-title">Define Phase</p>
-            <p class="text">
-                After getting enough insights from the customers and competitors, we define 4 user personas which represent each type of the customer and their journey.
-            </p>
-
-            <div class="two-column">
-                <div>
-                    <img src="images/petes/persona/lena.jpg" alt="Lena User Persona">
-                </div>
-    
-                <div>
-                    <img src="images/petes/persona/avery.png" alt="Avery User Persona">
-                </div>
-    
-                <div>
-                    <img src="images/petes/persona/john.jpg" alt="John User Persona">
-                </div>
-    
-                <div>
-                    <img src="images/petes/persona/paul.jpg" alt="Paul User Persona">
-                </div>
-            </div>
-
-            <p class="text">Our primary users included students from Drexel and Penn, along with local professors, faculty, and workers seeking a quick and convenient meal. These groups were identified as the most likely to consistently use the app. Additionally, we considered tourists and visiting families as part of our customer base, though their usage of the app would likely be less frequent.
-
-            </p>
-
-
-            <p class="text">
-                Form there, we developed a visual representation of the user's journey across all the touchpoints of our application to understand where we can improve the user experience.
-
-            </p>
-
-            <div class="pic">
-
-                <a style="cursor: zoom-in;" href="https://yenluong.vercel.app/images/petes/journey-map.png" target="_blank"><img src="images/petes/journey-map.png" alt="Journey Map" style="width: 100%;">
-                </a>
-                <p>Click on image to view full size</p>
-            </div>
-        </section>
-
-        <section class="ideate">
-            <p class="medium-title">Ideate Phase</p>
-
-            <p class="text">
-                In this phase, we conducted card sorting and performed a NUF (New, Useful, and Feasible) analysis, evaluating features on a 7-point scale to prioritize and refine our design decisions.
-            </p>
-
-            <div class="pic">
-
-                <img src="images/petes/nuf-analysis.png" alt="Journey Map">
-                <p>NUF Analysis</p>
-            </div>
-
-            <p class="text">
-                After brainstorming and identifying all the potential features for our app, we moved on to sketching and user flow. Each team member contributed unique ideas, and we selected the best elements from each concept to create a cohesive wireframe and paper prototype.
-            </p>
-
-            <div class="three-column">
-                <div class="pic">
-                    <img src="images/petes/taskflow-1.jpg" alt="task flow 1">
-                </div>
-                <div class="pic">
-                    <img src="images/petes/taskflow-2.jpg" alt="task flow 2">
-                </div>
-                <div class="pic">
-                    <img src="images/petes/taskflow-3.jpg" alt="task flow 3">
-                </div>
-            </div>
-
-            <p class="text">
-                For the moodboard, each team member created a unique version, and we combined elements from all of them to design a unified moodboard. Our goal was to evoke a comforting feel through the color palette while retaining the red from Pete's original branding. We also incorporated a lunchbox icon and other signature elements to stay true to Pete's established brand identity.
-
-
-            </p>
-
-            <div class="pic">
-                <img src="images/petes/moodboard.jpg" alt="Pete's Moodboard">
-                <p>Our final moodboard</p>
-            </div>
-        </section>
-
-        <section class="design">
-            <p class="text">After combining and selecting the user tasks we wanted to prioritize, we proceeded to create a paper prototype, which we used for our first round of testing.
-
-            </p>
-
-            <div class="pic">
-                <img src="images/petes/paper-prototype-wireframe.png" alt="Paper Prototype/Wireframe">
-                <p>Paper prototype/wireframe</p>
-            </div>
-
-            <!-- <div class="two-column" style="margin: 2rem 18rem">
-                <div>
-                    <img src="images/petes/paper-prototype.png" alt="Paper Prototype">
-                </div>
-    
-                <div>
-                    <img src="images/petes/paper-testing-2.png" alt="Paper Testing">
-                </div>
-            </div> -->
-
-            <!-- <p class="small-title">
-                Style Guide
-            </p>
-
-            <div class="pic">
-                <img src="images/petes/style-guide.png" alt="style guide">
-            </div> -->
-
-        </section>
-
-        <section class="test">
-            <p class="medium-title">
-                Test Phase
-            </p>
-
-            <p class="text">
-                Below is the evolution of our prototype, showcasing multiple iterations that incorporate feedback gathered from users during several rounds of testing. Each iteration reflects improvements made to enhance usability, address pain points, and align the design more closely with user needs.
-            </p>
-
-            <p class="small-title">Home Screen</p>
-
-        <div class="pic">
-            <img src="images/petes/home-screen.png" alt="home screen">
-        </div>
-
-            <div class="problem">
-                <strong>Problem:</strong>
-                <ul>
-                    <li>The carousel lacked functionality and moved automatically, which confused users.</li>
-                    <li>Icons on the navigation bar were unclear and difficult to interpret. For instance, the menu button resembled a file cabinet in the initial two designs.</li>
-                    <li>Critical information, such as the food truck's hours and location, was hidden under a dropdown menu, making it less accessible to users.</li>
-                </ul>
-    
-                <strong>Solution</strong>
-                <ul>
-                    <li>Users can now control the carousel at their own pace, and clicking on it directs them to the menu screen.</li>
-                    <li>Updated the menu icon to make it more recognizable, added labels to all icons for better clarity and accessibility.</li>
-                    <li>Displayed critical information, such as the food truck's hours and location, prominently on the home screen for quick access</li>
-                </ul>
-            </div>
-
-    
-            <p class="small-title">Customization Screen</p>
-            <p class="text">As mentioned above, although Pete's Little Lunch Box has a relatively small menu, it offers extensive customization options for each item. To accommodate this, our team decided to incorporate a customizable system within the app to streamline the menu and provide users with a more intuitive ordering experience.</p>
-    
-            <div class="pic">
-                <img src="images/petes/customization.png" alt="Customization Screen">
-            </div>
-    
-            <div class="problem">
-                <strong>Problem:</strong>
-                <ul>
-                    <li>There were too many buttons on the screen, which could confuse users during the ordering process.</li>
-                    <li>The radio buttons used to indicate selected items were helpful but too small and hard to see, especially when overlaid on images. To address this, we replaced them with a background color change for selected options.</li>
-                </ul>
-    
-                <strong>Solution:</strong>
-                <ul>
-                    <li>We prioritized reducing screen clutter by removing the navigation bar during the ordering process, helping users focus on their selections.
+                    <li>
+       
+                        <strong>Getting Started</strong> -  In this initial phase, I focused on setting up the worksheet and database, laying the groundwork for data storage and retrieval. This step was crucial in ensuring a structured and scalable foundation for the web app.
                     </li>
-                    <li>While the background color change improved visibility and usability, our professor pointed out the potential accessibility issues for users with disabilities. To address this, we reintroduced the radio button option while retaining the background color change, ensuring both accessibility and clarity.</li>
-                </ul>
-            </div>
-    
-            <p class="small-title">Reward System</p>
-    
-            <div class="pic">
-                <img src="images/petes/reward-system.png" alt="Reward System">
-            </div>
-    
-            <div class="problem">
-                <strong>Problem:</strong>
-                <ul>
-                    <li>The existing loyalty program's point system design was ambiguous, leading to user confusion and frustration.
+                    <li>
+                        <strong>Alpha Phase</strong> - During this phase, I developed the static pages using only HTML and CSS, translating the Figma prototype into a live webpage. The goal was to accurately bring the visual design to life while maintaining responsiveness and accessibility.
                     </li>
-                    <li>Users mentioned the point system resembled a switch or reminded them of "Burger King," which caused confusion about its purpose.</li>
-                    <li>The overall reward system lacked clarity. Users struggled to understand how points were earned, accumulated, and ultimately redeemed for rewards. This lack of transparency led to frustration and disengagement with the program.</li>
-                </ul>
-    
-                <strong>Solution:</strong>
-                <ul>
-                    <li>A comprehensive redesign of the reward system was implemented to enhance user understanding and engagement. This included clear and concise explanations of how points are earned, tracked, and redeemed.</li>
-                    <li>We also relocated the location feature to the home screen to enhance visibility.</li>
+                    <li>
+                        <strong>Final Phase (Backend Integration)</strong> - This stage involved integrating PHP and SQL into the project, making the web app interactive. I worked on features like handling user input, managing the cart, storing order details, and ensuring seamless database connectivity to create a functional and dynamic user experience.
+                    </li>
                 </ul>
             </div>
-    
+
         </section>
 
-        <section>
-            <p class="big-title">Final Design</p>
 
-            <div class="three-column" style="margin-bottom: 2rem">
-                <div class="pic">
-                    <img src="images/petes/final1.jpg" alt="final design 1">
-                </div>
-                <div class="pic">
-                    <img src="images/petes/final2.jpg" alt="final design 2">
-                </div>
-                <div class="pic">
-                    <img src="images/petes/final3.jpg" alt="final design 3">
-                </div>
-                <div class="pic">
-                    <img src="images/petes/final4.jpg" alt="final design 4">
-                </div>
-                <div class="pic">
-                    <img src="images/petes/final5.jpg" alt="final design 5">
-                </div>
-                <div class="pic">
-                    <img src="images/petes/final6.jpg" alt="final design 6">
-                </div>
+    
+        <section id="insight">
+            <p class="big-title">Process and Insight</p>
+
+            <p id="start" class="medium-title">Getting started</p>
+
+            <div class="text">
+                Before starting the prototype, I collaborated with the team's data architecture to clean and structure Pete's menu in a well-organized spreadsheet. I then built a MySQL database, ensuring all necessary tables were set up for seamless integration into the project. To enhance user experience and minimize redundancy, we streamlined the menu by consolidating similar items. For example, instead of listing 10 separate breakfast sandwiches, we combined them into a single customizable option, allowing users to select their preferred bread, protein, and condiments. This approach made the menu more intuitive and easier to navigate.
+
             </div>
 
-            <p class="small-title">Prototype walk through</p>
+            <div class="photo">
+                <img src="images/petes-v2/menu.jpg" alt="menu">
+            
+                <p>The original menu</p>
+            </div>
 
-            <div class="vid">
-                <video src="images/petes/Walkthrough.mp4" controls></video>
+            <div class="text">
+                With the database in place, I implemented a PHP script to dynamically fetch menu data, ensuring smooth integration with the front end. Using prepared statements for security, the script queries both the main menu tables and customizable ingredient tables based on user-provided GET parameters. The retrieved data is stored in associative arrays, enabling efficient processing and seamless display within the app.
+
+            </div>
+
+            <div class="photo">
+
+                    <img src="images/petes-v2/main-php.png" alt="example 1">
+            </div>
+
+            <div class="text">
+                The site below displays all the data (items, price, and images) retrieved from the database.
             </div>
 
             <div class="live-link">
-                <a href="https://www.figma.com/proto/7vSyDDv85vcOOTkxJOsznO/Pete's-Design-FIles?node-id=741-1014&p=f&t=33yJV054KhHgWP5E-1&scaling=scale-down&content-scaling=fixed&page-id=741%3A435&starting-point-node-id=741%3A508" target="_blank">Go here to see full hi-fi prototype</a>
+                <a href="http://localhost:8888/2501-idm216-beepbop/main.php" target="_blank">Database</a>
             </div>
     
+            <p id="alpha" class="medium-title">
+                Alpha Phase
+            </p>
+
+            
+            
+            <div class="text">
+                After setting up the database, I began by developing a static webpage using only HTML and CSS. This phase involved translating the Figma prototype created by the design team into a functional layout. While most interactive features were not yet implemented, this step allowed us to map out the key functionalities and microinteractions we wanted to prioritize as we continued developing the project.
+            </div>
+                
+                <div class="live-link" >
+                    <a href="https://digmstudents.westphal.drexel.edu/~yl3434/beepbop/alpha/home.html" target="_blank">Link to Alpha version</a>
+        
+                </div>
+
+            <div class="text">
+                Based on the critical flow of our Figma prototype, I developed the alpha version's flow, which focused on allowing users to place a sandwich order from the menu screen and proceed to checkout.
+            </div>
+
+            
+    
+            <p id="final" class="medium-title">
+                Final Phase (Backend Integration)
+            </p>
+
+            <div class="text">
+                Moving into the beta phase, while the design team conducted user research and refined the interface design based on feedback, I worked on setting up the backend structure of the web app.
+            </div>
+
+            <div class="live-link" >
+                <a href="https://digmstudents.westphal.drexel.edu/~yl3434/beepbop/beta/login-signup.html" target="_blank">Link to Beta version</a>
+    
+            </div>
+
+            <div class="small-title">
+                Guest Sessions and Cart Tracking
+            </div>
+
+            <div class="text">
+                Since our design team chose "Continue as Guest" as the primary user flow, I implemented PHP sessions to track guest users and their cart items without requiring an account. When a user selects the guest option, the system assigns a unique guest ID, initializes an empty cart, and sets up an order tracking array. This alows users to browse, add items to their cart, and place orders.
+
+            </div>
+
+            <div class="text">
+                The following PHP script handles guest session setup when a user selects "Continue as Guest":
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/init-session-id.png" alt="example 2">
+            </div>
+
+            <div class="text">
+
+                <ul>
+                    <li><strong>Guest ID Assignment:</strong> Generates a unique guest_id when a user enters as a guest.</li>
+                    <li><strong>Cart &amp; Order Setup:</strong> Initializes empty arrays to store cart items and track orders.</li>
+                </ul>
+            </div>
+
+            <div class="small-title">
+                Adding items to bag
+            </div>
+
+            
+            <div class="text">
+                <strong>Menu Display</strong>
+                <p>
+
+                    To dynamically display menu items on the menu screen, I implemented a PHP script that retrieves data from the database across multiple categories, including sandwiches, cheesesteaks, salads, pastries, and drinks. A PHP foreach loop iterates through the retrieved results, generating interactive menu elements, each displayed as a clickable link that directs users to its detailed page.
+                </p>
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/retrieve-menu.png" alt="example 3">
+
+                <img src="images/petes-v2/menu-item.png" alt="example 4">
+
+            </div>
+
+
+
+            <div class="text">
+                
+                Each menu item is assigned a unique ID and an associated table name, which are passed as URL parameters. Using PHP, I extract these values and query the database to fetch the corresponding item details.
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/getting-detail.png" alt="example 5">
+            </div>
+
+            <div class="text">
+            </div>
+
+            <div class="text">
+                <strong>Conditional Customization Display</strong>
+                <p>
+
+                    To efficiently manage customization options, I created a table map linking main menu tables to their respective customization tables. This allows PHP to dynamically retrieve relevant customization options based on the item's table and ID, ensuring that users only see applicable choices.
+                </p>
+
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/retrieve-custom-table.png" alt="example 6">
+            </div>
+
+            <div class="text">
+                I also used conditional logic to determine whether customization options appear as checkboxes (for multi-select items like proteins and condiments) or radio buttons (for single-choice options like bread type).
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/radio-checkbox.png" alt="example 7">
+            </div>
+
+            <div class="text">
+                <strong>Item Detail Screen and Customization Form</strong>
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/garden-detail.png" alt="garden detail screen">
+                <p>Garden salad on detail screen with French Dressing custom option</p>
+            </div>
+
+            <div class="text">
+                Each item detail page displays its image, title, price, and customization options. To allow users to select customizations, adjust quantity, and favorite an item, I created a form that captures all selections. Hidden input fields store essential data, ensuring smooth transfer to the cart for a seamless ordering experience.
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/hidden-input.png" alt="example 8">
+            </div>
+
+            <div class="text">
+                <strong>Real-Time Subtotal and Quantity Adjustment
+                </strong>
+                <p>
+
+                    The subtotal section dynamically updates using JavaScript whenever users select customization options or change the quantity. The script calculates the total by summing the base price and any additional customization costs, then multiplies it by the selected quantity. This ensures that the displayed price instantly reflects any changes. The updated subtotal is sent to the cart when the user clicks the "Add to Bag" button.
+                </p>
+            </div>
+
+
+            <div class="photo">
+                <img src="images/petes-v2/subtotal.png" alt="subtotal">
+                <p style="margin-bottom: 2rem">Subtotal shows at the end of item detial screen</p>
+
+                <img src="images/petes-v2/calculate-subtotal.png" alt="calculate subtotal">
+                <p>Javascript use to recalculate the subtotal</p>
+            </div>
+
+            <div class="text">
+                <strong>Add item to bag</strong>
+                <p>
+
+                    Once users finalize their customizations, they can click the "Add to Bag" button, which sends all selected options to the bag. In the bag, the title, image, subtotal, and chosen customizations are displayed, ensuring users can review their selections before checkout.
+                </p>
+            </div>
+
+        
+            <div class="photo">
+                <img src="images/petes-v2/garden-card.png" alt="garden card">
+                <p>Item display when added to bag</p>
+            </div>
+
+            <div class="text">
+                To handle the "Add to Bag" functionality, I used the POST method to retrieve form data, ensuring all selected options are properly captured. The script extracts key details such as the item ID, main table, image, menu item name, price, subtotal, notes, and quantity. It also processes customization options, differentiating between checkbox selections (multiple choices) and radio button selections (single choice) while filtering out unnecessary values. This structured approach ensures accurate data transfer to the bag for users to review their order.
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/add-item.png" alt="example 9">
+            </div>
+
+            <div class="text">
+                To efficiently manage the cart, I implemented logic to check if an item with the same ID, table, menu item, customizations, and notes already exists in the cart. If found, it simply increases the quantity and updates the subtotal. Otherwise, the item is added as a new entry. Customizations are sorted for consistency, ensuring that variations in selection order don't create duplicate entries. This approach keeps the cart organized and prevents unnecessary duplicates.
+            </div>
+
+            <div class="text">
+                This is also where I initialize the data stored in <strong>$_SESSION['cart']</strong> , ensuring that each item includes essential details such as id, table name, title, price, quantity, subtotal, and selected customizations. This structured approach allows for efficient retrieval, modification, and display of cart items throughout the web app.
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/check-duplicate.png" alt="check duplicate">
+            </div>
+
+            <div class="text">
+                To ensure the subtotal is calculated correctly, I use the <strong>array_sum</strong>  function combined with <strong>array_column</strong> , which extracts the subtotal values from all cart items in <strong>$_SESSION['cart']</strong>  and sums them up. This ensures the total displayed in the cart dynamically reflects all selected items and their quantities. The result is formatted using  <strong>number_format</strong> for a consistent currency display.
+            </div>
+
+
+            <div class="small-title">
+                Editing Item In Bag
+            </div>
+
+            <div class="photo video">
+                <video controls loop="loop" muted="">
+                    <source src="images/petes-v2/edit-item.mov">
+                </video>
+            
+            <p>Edit and update item in cart</p>
+            </div>
+
+            <div class="text">
+                Each item added to <strong>$_SESSION['cart']</strong> (which is cart) is assigned a unique index number, storing all relevant data, including the table name, title, price, and selected customizations. To allow users to modify their selections, I added an edit button that links to the item's edit screen, passing its index number in the URL.
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/edit-button.png" alt="edit button code example">
+            </div>
+            
+            <div class="text">
+                
+                To handle the editing process, I created an edit.php file that retrieves the item details from the cart using the index number passed in the URL. The script fetches the item data from the session and pre-fills the form with the current selections, allowing users to modify their choices.
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/getting-index.png" alt="example 10">
+                <p>Getting item index from the URL and retrieving the data from the <strong>$_SESSION['cart']</strong> with that item</p>
+            </div>
+
+            <div class="text">
+                When users finalize their updates and click the Update button, their changes are sent to update_cart.php, where the script processes the request efficiently. First, it validates that the cart exists in the session and ensures that the submitted item index is valid. It then retrieves the updated data, including quantity, notes, and customizations, while preserving the existing structure and filtering out unnecessary price-related keys. To prevent duplicate entries, the script checks if another item in the cart has the same item ID, table, name, and customizations. If a match is found, it merges the quantities and recalculates the subtotal instead of adding a duplicate item. Once the updates are applied, the script ensures that the item's data is correctly stored in <strong>$_SESSION['cart']</strong>. If a duplicate was merged, the original entry is removed, and the array is re-indexed for consistency. Finally, the user is redirected back to the cart page (bag.php), ensuring a smooth and organized update process.
+            </div>
+
+            <div class="small-title">
+                Removing Items From Bag
+            </div>
+
+            <div class="photo video">
+                
+                <video controls loop="loop" muted="">
+                    <source src="images/petes-v2/remove-item.mov">
+                </video>
+            
+                <p>Removing Items</p>
+            
+            </div>
+
+            <div class="text">
+                <strong>Deleting Item Individually</strong>
+                <p>
+
+                    For the Delete Item functionality, I created a form that sends the item's index to remove_item.php when the user clicks the delete button. The remove_item.php script runs entirely on the backend to ensure a seamless user experience. It first verifies that the session is active and checks if the index value exists in the request. If a valid index is provided, the corresponding item is removed from $_SESSION['cart']. To maintain a structured cart, the array is re-indexed using array_values(), ensuring no gaps in the item list. Since this process happens in the background, the user remains unaware of the backend operation, experiencing only the immediate removal of the item from their cart upon interaction. After the item is deleted, the user is redirected back to the cart page (bag.php), maintaining a smooth and uninterrupted shopping experience.            
+                </p>
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/remove-item.png" alt="remove item code">
+            </div>
+
+            
+            <div class="text">
+                <strong>Clear Bag</strong>
+                <p>
+
+                    To allow users to clear their entire cart, I implemented a simple reset function using unset($_SESSION['cart']). When the user clicks the "Clear Bag" button, the request is sent to a backend script that starts the session and removes the cart data from $_SESSION. This instantly resets the cart to an empty state.
+                </p>
+            </div>
+
+            <div class="text">
+                <strong>Empty Bag State</strong>
+                <p>
+
+                    To enhance user experience, I implemented a conditional check on <strong>$_SESSION['cart']</strong> . If the cart is empty, the page displays a message: "Oh No! Your Bag is Empty" along with an empty bag icon and a "View Menu" button, encouraging users to browse the menu.
+                </p>
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/empty-bag.png" alt="empty bag screen">
+                <p>Empty Bag</p>
+            </div>
+
+            <div class="text">
+                If there are items in the cart, the screen dynamically displays each food item in a structured layout, showing the item image, title, price, quantity, customizations, and notes.
+            </div>
+
+            <div class="photo">
+                <img src="images/petes-v2/bag-w-items.png" alt="bag with items">
+                <p>Bag with Item</p>
+            </div>
+
+            <div class="small-title">
+                Placing Order
+            </div>
+
+            <div class="text">
+                The next part of the web app focuses on the checkout process, where users can finalize their order by selecting <strong>payment method, pickup time and tips</strong>.
+            </div>
+
+            <div class="text">
+                <strong>Payment Method</strong>
+                <p> Users choose how they want to pay, such as credit card, Apple Pay, or cash on pickup.</p>
+            </div>
+
         </section>
-
-        <section>
-            <p class="big-title">Takeaways</p>
-
-            <p class="text">
-                This project was a formative experience, combining our ideas into functional prototypes. Our redesigned app bridges the gap for Pete's Little Lunch Box by offering a streamlined menu and ordering system, making it more accessible to a larger community. Given more time, we'd enhance the menu and checkout flows for better user exploration and add a settings feature for light/dark mode. We also plan to include an option to contact the food truck for customer concerns.
+    
+        <section id="solution">
+            <p class="big-title">
+                Solution
             </p>
+    
 
-            <p class="text">Collaboration this term was a journey. Despite scheduling challenges due to extracurricular commitments, we effectively communicated via Discord to complete the project. Working through these difficulties allowed us to deliver a great final product.           
-            </p>
-
-            <p class="text">This project provided an invaluable opportunity to engage in the entire design process from start to finish. Through multiple iterations and rounds of user testing, I learned how to effectively incorporate feedback to continuously improve the design. Group critiques played a crucial role, offering diverse perspectives that refined the app further. What I loved most about this project was the chance to listen to user feedback during each testing phase. Their insights were instrumental in making the design more user-friendly and intuitive.
-            </p>
-
-            <p class="text">Ultimately, this project deepened our understanding of UX principles. Using tools like Figma, FigJam, and Figma Slides, we applied key concepts from lectures, such as avoiding overwhelming users with too many navigation options. This focus improved usability, making our app smoother and easier to navigate.
-            </p>
+            
+    
         </section>
+    
+        <section id="result">
+            <p class="big-title">
+                The Results
+            </p>
+    
+            
 
-        <p class="small-title">Other Projects</p>
-
-        <section class="wrapper" style="background-color: lightyellow;">
+        <!-- <section class="wrapper" style="background-color: lightyellow;">
             <div class="project">
                 <div style="width: 95%"  class="mockup">
                     <a href="thewok.html">
@@ -488,7 +584,7 @@
                 
             </div>
 
-        </section>
+        </section> -->
 
 
         <footer>
@@ -508,5 +604,6 @@
 
 
     <script src="scripts/index.js"></script>
+    <script src="scripts/index-nav.js"></script>
 </body>
 </html>           

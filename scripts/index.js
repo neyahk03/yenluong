@@ -8,8 +8,3 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('change');
     menu.classList.toggle('open');
 })
-
-
-
-
-
