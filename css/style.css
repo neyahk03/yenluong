@@ -24,19 +24,29 @@
 }
 
 html {
+    --white: #ffffff;
+    --black: #111111;
     --red: #a63b33;
+    --dark-red: #7a2a25;
+    --blue: #2f6fab;
+    --light-blue: #cbeaff;
     --lightblue: #AEE2FD;
     --lightpink: #FFCBD4;
 
     --orange: #FF8400;
 
-
+    --text-color: var(--black);
+    --menu-background-color: var(--lightpink);
 
     --background-color: var(--white);
     --foreground-color: var(--red);
     --accent-color-1: var(--dark-red);
     --accent-color-2: var(--blue);
     --accent-color-3: var(--light-blue);
+
+    --dark-background-color: #0f0f12;
+    --dark-foreground-color: #f5f5f5;
+    --dark-accent-color: var(--lightpink);
 
     --font-light: 'poppinslight';
     --font-regular: 'poppinsregular';
@@ -53,6 +63,7 @@ html {
 body {
     font-family: 'urbanist';
     font-size: 1.2rem;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -70,12 +81,12 @@ nav {
     font-weight: 700;
     
     a {
-        color: black;
+        color: var(--text-color);
         text-decoration: none;
     }
 
     a:visited {
-        color: black;
+        color: var(--text-color);
     }
 }
 
@@ -87,11 +98,11 @@ nav {
 
     li {
         list-style-type: none;
-        color: black;
+        color: var(--text-color);
     }
 
     li a {
-        color: black;
+        color: var(--text-color);
         text-decoration: none;
         padding-inline: 2rem;
     }
@@ -101,7 +112,7 @@ nav {
     }
 
     li a:visited{
-        color: black;
+        color: var(--text-color);
     }
 }
 
@@ -226,7 +237,7 @@ nav {
 }
 
 .view a:after {
-    color: black;
+    color: var(--text-color);
 }
 
 footer {
@@ -291,7 +302,7 @@ footer {
     .btn-menu div {
         height: 2px;
         width: 30px;
-        background-color: black;
+        background-color: var(--text-color);
         margin: 5px 0;
         transition: 0.3s;
     }
@@ -346,7 +357,7 @@ footer {
 
     .menu {
         display: block;
-        background-color: var(--lightpink);
+        background-color: var(--menu-background-color);
         /* grid-column: 1/8;
         grid-row-start: 1; */
         text-align: center;
@@ -382,11 +393,11 @@ footer {
     
             a {
                 text-decoration: none;
-                color: black;
+                color: var(--text-color);
             }
     
             a:visited {
-                color: black;
+                color: var(--text-color);
             }
     
             a:active {
@@ -404,4 +415,3 @@ footer {
     }
     
 }
-
