@@ -55,6 +55,30 @@ h3.small-title {
     padding: 0;
 }
 
+.live-link-button {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    color: white;
+    text-decoration: none;
+    background-color: var(--dark-red);
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.live-link-button:hover {
+    transform: scale(1.05);
+}
+
+.live-link-button:active {
+    color: white;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
     * {

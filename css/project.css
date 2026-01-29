@@ -460,7 +460,8 @@ p ~ p {
     margin: 2rem auto;
 }
 
-.live-link a{
+.live-link a,
+.live-link button {
     display:inline-block;
     color: white;
     text-decoration: none;
@@ -472,15 +473,20 @@ p ~ p {
 
     text-align: center;
     transition: transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font: inherit;
 
 }
 
-.live-link a:hover {
+.live-link a:hover,
+.live-link button:hover {
     transform: scale(1.05);
 
 }
 
-.live-link a:active {
+.live-link a:active,
+.live-link button:active {
     color: white;
 }
 
